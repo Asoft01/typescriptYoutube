@@ -41,4 +41,28 @@
 //     console.log(newAddress);
 // }
 // addressMaker("Lekki", "Lagos");
+/////////////////////// Combining all the challenge /////////////////////////////
+// function addressMaker(address) {
+//     const newAddress = {
+//         city: address.city, 
+//         state: address.state, 
+//         country: 'United State'
+//     };
+//     // console.log(newAddress);
+// }
+
+// addressMaker({city: 'Austin', state: 'Texas'});
+
+///////////////////// Rewriting the coding challenge //////////////////////////////
+function addressMaker(address) {
+    const {city, state} = address;
+    const newAddress = {
+        city, 
+        state,
+        country: 'United State'
+    }; 
+    console.log(`${newAddress.city}, ${newAddress.state}, ${newAddress.country}` );
+}
+
+addressMaker({city: "Austin", state: "Texas"});
 </script>
