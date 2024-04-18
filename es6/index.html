@@ -92,5 +92,34 @@
 // console.log(example2);
 
 ////////////////////// Rest Operator ////////////////////////////////////////
+// function add(nums) {
+//     // console.log(nums); 
+//     console.log(arguments); 
+// }
 
+// add(4, 5, 7, 8, 12);
+
+// function add(...nums) {
+//     console.log(nums);
+// }
+
+// add(4, 5, 7, 8, 12);
+
+/////////////////////// Arrow Functions //////////////////////////////////////
+// function add(...nums) {
+//     let total = nums.reduce(function(a, y) {
+//         return a + y;
+//     });
+//     console.log(total); 
+// }
+
+// add(4, 5, 7, 8, 12);
+
+/////////////////////// Rewriting the function //////////////////////////////
+function add(...nums) {
+    const total = nums.reduce((a, y) => a + y);
+    console.log(total);
+}
+
+add(4, 5, 7, 8, 12);
 </script>
